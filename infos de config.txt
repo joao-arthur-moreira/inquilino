@@ -1,4 +1,4 @@
-Configuração do datasource no arquivo context do tomcat
+Configuraï¿½ï¿½o do datasource no arquivo context do tomcat
 
 <Resource name="jdbc/brewerDB" auth="Container" 
             factory="org.apache.naming.factory.BeanFactory"
@@ -18,3 +18,13 @@ Colocar os .jar abaixo na pasta lib do tomcat:
 c3p0-0.9.5.2
 mchange-commons-java-0.2.11
 postgresql-9.3-1100-jdbc4
+
+
+flyway
+flyway:migrate
+
+flyway.user = postgres
+
+flyway.password = sc0rp10n
+
+flyway.url = jdbc:postgresql://localhost:5432/inquilino
