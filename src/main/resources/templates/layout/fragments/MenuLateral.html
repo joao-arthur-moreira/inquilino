@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt" xmlns="http://www.w3.org/1999/xhtml" 
 	xmlns:th="http://www.thymeleaf.org"
-	xmlns:brewer="http://brewer.algaworks.com">
+	xmlns:jajm="http://inquilino.jajm.com">
 	
 <body>
 <aside class="aw-layout-sidebar  js-sidebar" th:fragment="layout-sidebar">
@@ -10,7 +10,7 @@
     	<nav class="aw-menu  js-menu">
       		<ul class="aw-menu__list">
 
-        		<li class="aw-menu__item" brewer:menu="@{/}">
+        		<li class="aw-menu__item" jajm:menu="@{/}">
           			<a th:href="@{/}"><i class="fa  fa-fw  fa-home"></i><span>Dashboard</span></a>
         		</li>
         		
@@ -38,11 +38,11 @@
           			</a>
       
           			<ul class="aw-menu__list  aw-menu__list--sublist">
-			            <li class="aw-menu__item  aw-menu__item--link" brewer:menu="@{/estilos.*}">
+			            <li class="aw-menu__item  aw-menu__item--link" jajm:menu="@{/estilos.*}">
 			            	<a th:href="@{/estilos}">Estilos</a>
 			            </li>
-			            <li class="aw-menu__item  aw-menu__item--link" brewer:menu="@{/imoveis.*}">
-			            	<a th:href="@{/cervejas}">Imóveis</a>
+			            <li class="aw-menu__item  aw-menu__item--link" jajm:menu="@{/imoveis.*}">
+			            	<a th:href="@{/imoveis}">Imóveis</a>
 			            </li>
           			</ul>
         		</li>
@@ -54,13 +54,13 @@
           			</a>
 
           			<ul class="aw-menu__list  aw-menu__list--sublist">
-			            <li class="aw-menu__item  aw-menu__item--link" brewer:menu="@{/cidades.*}">
+			            <li class="aw-menu__item  aw-menu__item--link" jajm:menu="@{/cidades.*}">
 			            	<a th:href="@{/cidades}">Cidades</a>
 			            </li>
-			            <li class="aw-menu__item  aw-menu__item--link" brewer:menu="@{/clientes.*}">
+			            <li class="aw-menu__item  aw-menu__item--link" jajm:menu="@{/clientes.*}">
 			            	<a th:href="@{/clientes}">Clientes</a>
 			            </li>
-			            <li class="aw-menu__item  aw-menu__item--link" brewer:menu="@{/usuarios.*}">
+			            <li class="aw-menu__item  aw-menu__item--link" jajm:menu="@{/usuarios.*}">
 			            	<a th:href="@{/usuarios}">Usuários</a>
 			            </li>
           			</ul>

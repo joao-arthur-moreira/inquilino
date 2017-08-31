@@ -3,7 +3,7 @@
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	layout:decorate="~{layout/LayoutPadrao}"
-	xmlns:brewer="http://brewer.algaworks.com"
+	xmlns:jajm="http://inquilino.jajm.com"
 	xmlns:data="http://www.thymeleaf.org/extras/data">
 
 <head>
@@ -28,7 +28,7 @@
 	
 	<div class="container-fluid">
 		<form method="POST" th:action="@{/vendas/nova}" th:object="${venda}" class="js-formulario-principal">
-			<brewer:message/>
+			<jajm:message/>
 		
 			<input type="hidden" id="uuid" th:field="*{uuid}"/>
 			<input type="hidden" th:field="*{codigo}"/>
@@ -71,7 +71,7 @@
 			</div>
 
 			<div class="row">
-				<div class="form-group  col-sm-4  bw-required" brewer:classforerror="cliente.codigo">
+				<div class="form-group  col-sm-4  bw-required" jajm:classforerror="cliente.codigo">
 					<label class="control-label" for="nomeCliente">Cliente</label>
 					<div class="input-group">
 				      <input id="nomeCliente" type="text" readonly="readonly" class="form-control" th:field="*{cliente.nome}" 
@@ -132,7 +132,7 @@
 				
 				<div class="tab-pane" id="entrega">
 					<div class="row">
-						<div class="form-group  col-sm-3" brewer:classforerror="dataEntrega">
+						<div class="form-group  col-sm-3" jajm:classforerror="dataEntrega">
 							<label class="control-label" for="dataEntrega">Data da entrega</label>
 							<input type="text" class="form-control" id="dataEntrega" th:field="*{dataEntrega}" th:disabled="${venda.salvarProibido}"/>
 						</div>

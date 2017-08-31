@@ -17,6 +17,6 @@ CREATE TABLE item_venda (
     codigo BIGINT PRIMARY KEY DEFAULT nextval('seq_itemvenda'),
     quantidade INTEGER NOT NULL,
     valor_unitario DECIMAL(10,2) NOT NULL,
-    codigo_cerveja BIGINT NOT NULL REFERENCES cerveja(codigo),
+    codigo_imovel BIGINT NOT NULL REFERENCES imovel(codigo),
     codigo_venda BIGINT NOT NULL REFERENCES venda(codigo)
 );

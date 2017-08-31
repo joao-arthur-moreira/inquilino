@@ -56,7 +56,7 @@ public class Mailer {
 				fotos.put(cid, imovel.getFoto() + "|" + imovel.getContentType());
 			} else {
 				adicionarMockCerveja = true;
-				context.setVariable("mockCerveja", "mockCerveja");
+				context.setVariable("mockImovel", "mockImovel");
 			}
 		}
 		
@@ -65,15 +65,15 @@ public class Mailer {
 			
 			MimeMessage mimeMessage = mailSender.createMimeMessage();
 			MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true, "UTF-8");
-			helper.setFrom("teste@algaworks.com");
+			helper.setFrom("teste@teste.com");
 			helper.setTo(venda.getCliente().getEmail());
-			helper.setSubject(String.format("Brewer - Venda nº %d", venda.getCodigo()));
+			helper.setSubject(String.format("Inquilino - Venda nº %d", venda.getCodigo()));
 			helper.setText(email, true);
 			
 			helper.addInline("logo", new ClassPathResource("static/images/logo-gray.png"));
 			
 			if (adicionarMockCerveja) {
-				helper.addInline("mockCerveja", new ClassPathResource("static/images/cerveja-mock.png"));
+				helper.addInline("mockCerveja", new ClassPathResource("static/images/imovel-mock.png"));
 			}
 			
 			for (String cid : fotos.keySet()) {

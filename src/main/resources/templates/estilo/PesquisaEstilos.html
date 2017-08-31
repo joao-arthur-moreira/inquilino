@@ -3,7 +3,7 @@
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	layout:decorate="~{layout/LayoutPadrao}"
-	xmlns:brewer="http://brewer.algaworks.com">
+	xmlns:jajm="http://inquilino.jajm.com">
 	
 <head>
 	<title>Pesquisa de estilos</title>
@@ -47,7 +47,7 @@
 					<tr>
 						<th class="table-estilos-col-codigo">Código</th>
 						<th>
-							<brewer:order page="${pagina}" field="nome" text="Nome"/>
+							<jajm:order page="${pagina}" field="nome" text="Nome"/>
 						</th>
 						<th class="table-col-acoes"></th>
 					</tr>
@@ -73,7 +73,7 @@
 			</table>
 		</div>
 		
-		<brewer:pagination page="${pagina}"/>
+		<jajm:pagination page="${pagina}"/>
 		
 	</div>
 

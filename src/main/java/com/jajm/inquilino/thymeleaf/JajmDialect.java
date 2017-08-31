@@ -13,10 +13,10 @@ import com.jajm.inquilino.thymeleaf.processor.MessageElementTagProcessor;
 import com.jajm.inquilino.thymeleaf.processor.OrderElementTagProcessor;
 import com.jajm.inquilino.thymeleaf.processor.PaginationElementTagProcessor;
 
-public class BrewerDialect extends AbstractProcessorDialect {
+public class JajmDialect extends AbstractProcessorDialect {
 
-	public BrewerDialect() {
-		super("AlgaWorks Brewer", "brewer", StandardDialect.PROCESSOR_PRECEDENCE);
+	public JajmDialect() {
+		super("Jajm Inquilino", "jajm", StandardDialect.PROCESSOR_PRECEDENCE);
 	}
 	
 	@Override

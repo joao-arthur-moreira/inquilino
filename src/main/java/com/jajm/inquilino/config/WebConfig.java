@@ -45,7 +45,7 @@ import com.jajm.inquilino.controller.converter.EstadoConverter;
 import com.jajm.inquilino.controller.converter.EstiloConverter;
 import com.jajm.inquilino.controller.converter.GrupoConverter;
 import com.jajm.inquilino.session.TabelasItensSession;
-import com.jajm.inquilino.thymeleaf.BrewerDialect;
+import com.jajm.inquilino.thymeleaf.JajmDialect;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 
@@ -79,7 +79,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
 		engine.setTemplateResolver(templateResolver());
 		
 		engine.addDialect(new LayoutDialect());
-		engine.addDialect(new BrewerDialect());
+		engine.addDialect(new JajmDialect());
 		engine.addDialect(new DataAttributeDialect());
 		engine.addDialect(new SpringSecurityDialect());
 		return engine;

@@ -3,7 +3,7 @@
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	layout:decorate="~{layout/LayoutPadrao}"
-	xmlns:brewer="http://brewer.algaworks.com"
+	xmlns:jajm="http://inquilino.jajm.com"
 	xmlns:data="http://www.thymeleaf.org/extras/data">
 	
 <head>
@@ -91,7 +91,7 @@
 	            	<tr>
 	                	<th>Código</th>
 	                	<th>
-	                		<brewer:order page="${pagina}" field="c.nome" text="Cliente"/>
+	                		<jajm:order page="${pagina}" field="c.nome" text="Cliente"/>
 	                	</th>
 	                	<th>Data de criação</th>
 	                	<th>Valor total</th>
@@ -124,7 +124,7 @@
 	         </table>
 		</div>
 		
-		<brewer:pagination page="${pagina}"/>
+		<jajm:pagination page="${pagina}"/>
 	</div>
 </section>
 

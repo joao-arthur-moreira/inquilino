@@ -3,7 +3,7 @@
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	layout:decorate="~{layout/LayoutPadrao}"
-	xmlns:brewer="http://brewer.algaworks.com"
+	xmlns:jajm="http://inquilino.jajm.com"
 	xmlns:data="http://www.thymeleaf.org/extras/data"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 	
@@ -56,10 +56,10 @@
 				<thead>
 					<tr>
 						<th class="table-cidades-col-nome">
-							<brewer:order page="${pagina}" field="nome" text="Nome"/>
+							<jajm:order page="${pagina}" field="nome" text="Nome"/>
 						</th>
 						<th class="table-cidades-col-estado">
-							<brewer:order page="${pagina}" field="estado" text="Estado"/>
+							<jajm:order page="${pagina}" field="estado" text="Estado"/>
 						</th>
 						<th class="table-col-acoes" sec:authorize="hasRole('ROLE_CADASTRAR_CIDADE')"></th>
 					</tr>
@@ -85,7 +85,7 @@
 			</table>
 		</div>
 		
-		<brewer:pagination page="${pagina}"/>
+		<jajm:pagination page="${pagina}"/>
 		
 	</div>
 </section>

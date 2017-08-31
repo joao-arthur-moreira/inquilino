@@ -3,7 +3,7 @@
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	layout:decorate="~{layout/LayoutPadrao}"
-	xmlns:brewer="http://brewer.algaworks.com">
+	xmlns:jajm="http://inquilino.jajm.com">
 
 <head>
 	<title>Cadastro de cidade</title>
@@ -31,10 +31,10 @@
 	
 	<div class="container-fluid">
 		<form method="POST" th:object="${cidade}" th:action="@{/cidades/nova}">
-			<brewer:message/>
+			<jajm:message/>
 			
 			<div class="row">
-				<div class="form-group  col-sm-4  bw-required" brewer:classforerror="estado">
+				<div class="form-group  col-sm-4  bw-required" jajm:classforerror="estado">
 					<label for="estado" class="control-label">Estado</label>
 					<select id="estado" class="form-control" th:field="*{estado}">
 	                    <option value="">Selecione o estado</option>
@@ -42,7 +42,7 @@
 	                </select>
 				</div>
 				
-				<div class="form-group  col-sm-8  bw-required" brewer:classforerror="nome">
+				<div class="form-group  col-sm-8  bw-required" jajm:classforerror="nome">
 					<label for="nome" class="control-label">Nome</label>
 					<input type="text" class="form-control" id="nome" th:field="*{nome}"/>
 				</div>

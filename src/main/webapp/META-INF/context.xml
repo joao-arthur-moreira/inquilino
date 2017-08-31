@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE xml>
 <Context>
-    <Resource name="jdbc/brewerDB" auth="Container" 
+    <Resource name="jdbc/inquilino" auth="Container" 
             factory="org.apache.naming.factory.BeanFactory"
             type="com.mchange.v2.c3p0.ComboPooledDataSource"
             driverClass="org.postgresql.Driver"
-            jdbcUrl="jdbc:postgresql://localhost:5432/brewer"
+            jdbcUrl="jdbc:postgresql://localhost:5432/inquilino"
             user="postgres"
             password="sc0rp10n" 
             initialPoolSize="5" 
