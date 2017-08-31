@@ -1,0 +1,20 @@
+Configuração do datasource no arquivo context do tomcat
+
+<Resource name="jdbc/brewerDB" auth="Container" 
+            factory="org.apache.naming.factory.BeanFactory"
+            type="com.mchange.v2.c3p0.ComboPooledDataSource"
+            driverClass="org.postgresql.Driver"
+            jdbcUrl="jdbc:postgresql://localhost:5432/brewer"
+            user="postgres"
+            password="sc0rp10n" 
+            initialPoolSize="5" 
+            minPoolSize="5"
+            maxPoolSize="5" 
+     />
+
+
+Colocar os .jar abaixo na pasta lib do tomcat:
+
+c3p0-0.9.5.2
+mchange-commons-java-0.2.11
+postgresql-9.3-1100-jdbc4
