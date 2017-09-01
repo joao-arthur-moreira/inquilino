@@ -1,12 +1,12 @@
 Configura��o do datasource no arquivo context do tomcat
 
-<Resource name="jdbc/brewerDB" auth="Container" 
+<Resource name="jdbc/inq" auth="Container" 
             factory="org.apache.naming.factory.BeanFactory"
             type="com.mchange.v2.c3p0.ComboPooledDataSource"
             driverClass="org.postgresql.Driver"
-            jdbcUrl="jdbc:postgresql://localhost:5432/brewer"
+            jdbcUrl="jdbc:postgresql://localhost:5432/inq"
             user="postgres"
-            password="sc0rp10n" 
+            password="senha" 
             initialPoolSize="5" 
             minPoolSize="5"
             maxPoolSize="5" 
