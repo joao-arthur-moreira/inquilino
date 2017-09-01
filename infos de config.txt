@@ -25,6 +25,6 @@ flyway:migrate
 
 flyway.user = postgres
 
-flyway.password = sc0rp10n
+flyway.password = senha
 
 flyway.url = jdbc:postgresql://localhost:5432/inquilino
